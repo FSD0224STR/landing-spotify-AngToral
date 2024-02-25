@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.encabezado {
+    text-align: center;
+    
+}
+
+.beneficios {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, rgb(230, 100, 230), rgb(62, 62, 255)) 1;
+    grid-template-areas: "lista";
+    box-sizing: border-box;
+    padding-right: 20px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.checks {
+    list-style: none;
+    text-align: left;
+
+}
+
+.checks li:before {
+    content: '✓';
+}
+
+.planes {
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+}
+
+.plan1 {
+    display: grid;
+    grid-template-rows: 50px 65px 90px 60px 60px;
+    grid-template-columns: 2fr 1fr;
+    border: 3px solid pink;
+    border-radius: 10px;
+    grid-template-areas: "gratis nada" "indiv mes" "list list" "boton boton" "texto texto";
+    box-sizing: border-box;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.rosa1 {
+    border: 2px solid #ffd5dc;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #ffd5dc;
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-rows: 30px 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "mes1" "mes2";
+    text-align: right;
+    padding-right: 0px;
+}
+
+.grid21 {
+    font-weight: bold;
+}
+
+.grid22 {
+    font-size: xx-small;
+}
+
+.listado {
+    line-height: 2;
+}
+
+a:hover {
+    animation-name: Getbig;
+    animation-fill-mode: both;
+}
+
+@keyframes Getbig {
+    0% {scale: 1;}
+    100% {scale: 1.05;}
+}
+
+.Button {
+    display: block;
+    border: 0px solid #ffd5dc;
+    border-radius: 500px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ffd5dc;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.explicacion {
+    font-size: smaller;
+    text-align: center;
+}
+
+/* a falta de saber cómo redondear el cuadro degradado, 
+cómo poner todo ese texto más a la izquierda
+y hacer los demás cuadros*/
