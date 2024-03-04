@@ -7,7 +7,13 @@ body {
 
 .encabezado {
     text-align: center;
-    
+    font-weight: bold;
+    font-size: medium;
+}
+
+.titulo {
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 .beneficios {
@@ -16,7 +22,7 @@ body {
     grid-template-columns: 1fr;
     border-radius: 12px;
     border: 3px solid transparent;
-    border-image: linear-gradient(to right, rgb(230, 100, 230), rgb(62, 62, 255)) 1;
+    border-image: linear-gradient(to right, rgb(183, 50, 127), rgb(53, 53, 158)) 1;
     grid-template-areas: "lista";
     box-sizing: border-box;
     padding-right: 20px;
@@ -24,17 +30,23 @@ body {
     max-width: 450px;
     width: 100%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+}
+
+.subtitulo {
+    padding-bottom: 0px;
 }
 
 .checks {
+    margin-top: 2px;
     list-style: none;
     text-align: left;
-
+    margin-left: -10px;
+    line-height: 1.5;
 }
 
 .checks li:before {
-    content: '✓';
+    content: '✓ ';
 }
 
 .planes {
@@ -47,13 +59,14 @@ body {
     display: grid;
     grid-template-rows: 50px 65px 90px 60px 60px;
     grid-template-columns: 2fr 1fr;
-    border: 3px solid pink;
+    border: 4px solid pink;
     border-radius: 10px;
-    grid-template-areas: "gratis nada" "indiv mes" "list list" "boton boton" "texto texto";
+    grid-template-areas: "gratis1 nada1" "indiv1 mes1" "list1 list1" "boton1 boton1" "texto1 texto1";
     box-sizing: border-box;
     margin: 10px;
     padding-left: 10px;
     padding-right: 20px;
+    padding-top: 6px;
 }
 
 .rosa1 {
@@ -72,7 +85,7 @@ body {
     display: grid;
     grid-template-rows: 30px 20px;
     grid-template-columns: 1fr;
-    grid-template-areas: "mes1" "mes2";
+    grid-template-areas: "mes11" "mes12";
     text-align: right;
     padding-right: 0px;
 }
@@ -99,11 +112,11 @@ a:hover {
     100% {scale: 1.05;}
 }
 
-.Button {
+.Button1 {
     display: block;
     border: 0px solid #ffd5dc;
     border-radius: 500px;
-    padding: 10px;
+    padding: 13px;
     margin: 5px;
     background-color: #ffd5dc;
     color: black;
@@ -113,11 +126,213 @@ a:hover {
 
 }
 
+.list1 {
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+.consulta {
+    color: white;
+}
+
 .explicacion {
     font-size: smaller;
     text-align: center;
 }
 
-/* a falta de saber cómo redondear el cuadro degradado, 
-cómo poner todo ese texto más a la izquierda
-y hacer los demás cuadros*/
+.plan2 {
+    display: grid;
+    grid-template-rows: 50px 65px 150px 60px 70px;
+    grid-template-columns: 2fr 1fr;
+    border: 4px solid rgb(243, 210, 255);
+    border-radius: 10px;
+    grid-template-areas: "gratis2 nada2" "indiv2 mes2" "list2 list2" "boton2 boton2" "texto2 texto2";
+    box-sizing: border-box;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 6px;
+}
+
+.lila1 {
+    border: 2px solid rgb(243, 210, 255);
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(243, 210, 255);
+    color: black;
+    font-weight: bold;
+    margin-right: 70px;
+    box-sizing: border-box;
+}
+
+.nombre2 {
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-rows: 30px 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "mes21" "mes22";
+    text-align: right;
+    padding-right: 0px;
+}
+
+.grid31 {
+    font-weight: bold;
+}
+
+.grid32 {
+    font-size: xx-small;
+}
+
+.list2 {
+    padding-top: 7px;
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+.Button2 {
+    display: block;
+    border: 0px solid rgb(243, 210, 255);
+    border-radius: 500px;
+    padding: 13px;
+    margin: 5px;
+    background-color: rgb(243, 210, 255);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.plan3 {
+    display: grid;
+    grid-template-rows: 55px 90px 60px 40px;
+    grid-template-columns: 2fr 1fr;
+    border: 4px solid rgb(255, 200, 98);
+    border-radius: 10px;
+    grid-template-areas: "indiv3 mes3" "list3 list3" "boton3 boton3" "texto3 texto3";
+    box-sizing: border-box;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.nombre3 {
+    padding-left: 10px;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-rows: 30px 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "mes31" "mes32";
+    text-align: right;
+    padding-top: 10px;
+}
+
+.grid41 {
+    font-weight: bold;
+}
+
+.grid42 {
+    font-size: xx-small;
+}
+
+.list3 {
+    padding-top: 7px;
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+.Button3 {
+    display: block;
+    border: 0px solid rgb(255, 200, 98);
+    border-radius: 500px;
+    padding: 13px;
+    margin: 5px;
+    background-color: rgb(255, 200, 98);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.plan4 {
+    display: grid;
+    grid-template-rows: 55px 110px 60px 40px;
+    grid-template-columns: 2fr 1fr;
+    border: 4px solid rgb(125, 170, 186);
+    border-radius: 10px;
+    grid-template-areas: "indiv4 mes4" "list4 list4" "boton4 boton4" "texto4 texto4";
+    box-sizing: border-box;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.nombre4 {
+    padding-left: 10px;
+}
+
+.grid5 {
+    display: grid;
+    grid-template-rows: 30px 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "mes41" "mes42";
+    text-align: right;
+    padding-top: 10px;
+}
+
+.grid51 {
+    font-weight: bold;
+}
+
+.grid52 {
+    font-size: xx-small;
+}
+
+.list4 {
+    padding-top: 7px;
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+.Button4 {
+    display: block;
+    border: 0px solid rgb(125, 170, 186);
+    border-radius: 500px;
+    padding: 13px;
+    margin: 5px;
+    background-color: rgb(125, 170, 186);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* a falta de saber cómo redondear el cuadro degradado - con mask, pero me tapa el texto y el responsive*/
+
+@media screen and (min-width: 1400px) {
+    
+    .beneficios {
+        width: 1200px;
+        box-sizing: border-box;
+        max-width: 100%;
+        border-radius: 12px;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, rgb(183, 50, 127), rgb(53, 53, 158)) 1;
+        padding-right: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+     
+    .checks {
+        margin-top: 2px;
+        list-style: none;
+        text-align: left;
+        margin-left: 350px;
+        line-height: 1.5;
+}}
